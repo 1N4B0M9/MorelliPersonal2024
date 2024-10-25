@@ -1,0 +1,35 @@
+{
+  "name": "morellipersonal2024",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:css": "tailwindcss -i ./src/style.css -o ./public/style.css --watch",
+    "dev:react": "react-scripts start",
+    "dev": "concurrently \"npm run dev:css\" \"npm run dev:react\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "tailwindcss": "^3.4.14"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
