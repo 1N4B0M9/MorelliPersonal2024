@@ -3,17 +3,21 @@
   "version": "1.0.0",
   "description": "personal portfolio",
   "main": "index.js",
+  "homepage": "https://nathanmorelli.com",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "dev:css": "tailwindcss -i ./src/style.css -o ./public/style.css --watch",
-    "dev:react": "react-scripts start",
-    "dev": "concurrently \"npm run dev:css\" \"npm run dev:react\""
+    "dev": "concurrently \"npm run dev:css\" \"npm run start\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
