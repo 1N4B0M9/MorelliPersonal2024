@@ -2,8 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-#title {
-    color: grey;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+   background-color: #F8F8F8;
+   background-color: black;
 
+ 
 }
+    
+
+
+@layer base {
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/fonts/Roboto.woff2) format('woff2');
+    }
+  }

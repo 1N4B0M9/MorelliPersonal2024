@@ -7,6 +7,8 @@ import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
 import SidePanel from './pages/sidePanel';
 import TwoPageLayout from './TwoPageLayout';
+import Footer from "./footer";
+import Threes from "./ThreeDeeFiles/ThreeIndex";
 
 
 
@@ -22,12 +24,13 @@ export default function App(){
         <Router>
             <Nav />
                 <Routes>
-                    <Route exact path="/" element={<TwoPageLayout LeftPage={SidePanel} RightPage={Body} />} />
+                    <Route exact path="/" element={<TwoPageLayout LeftPage={SidePanel} RightPage={Threes} />} />
                     <Route path="/about" element={<TwoPageLayout LeftPage={SidePanel} RightPage={About} />} />
                     <Route path="/portfolio" element={<TwoPageLayout LeftPage={SidePanel} RightPage={Portfolio} />} />
                     <Route path="/contact" element={<TwoPageLayout LeftPage={SidePanel} RightPage={Contact} />} />
                 </Routes>
         </Router>
+        <Footer />
         
 
         
