@@ -9,6 +9,8 @@ import SidePanel from './pages/sidePanel';
 import TwoPageLayout from './TwoPageLayout';
 import Footer from "./footer";
 import Threes from "./ThreeDeeFiles/ThreeIndex";
+import Home from "./home";
+import PageLayout from "./pagelayout";
 
 
 
@@ -20,18 +22,20 @@ export default function App(){
         
         <>
 
-       
+    <div className="relative z-20">
+    <div className="absolute inset-0 z-0 pointer-events-none">
+        <Threes />
+      </div>
         <Router>
-            <Nav />
+            <Nav className="z-30" />
                 <Routes>
-                    <Route exact path="/" element={<TwoPageLayout LeftPage={SidePanel} RightPage={Threes} />} />
-                    <Route path="/about" element={<TwoPageLayout LeftPage={SidePanel} RightPage={About} />} />
+                    <Route exact path="/" element={<Home LeftPage={SidePanel} ThreeModel={Threes}/>} />
+                    <Route path="/about" element={<PageLayout LeftPage={SidePanel} RightPage={About} />} />
                     <Route path="/portfolio" element={<TwoPageLayout LeftPage={SidePanel} RightPage={Portfolio} />} />
-                    <Route path="/contact" element={<TwoPageLayout LeftPage={SidePanel} RightPage={Contact} />} />
                 </Routes>
         </Router>
         <Footer />
-        
+        </div>
 
         
        
