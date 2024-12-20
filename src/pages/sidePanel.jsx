@@ -1,7 +1,7 @@
 import Me from "../images/1720401499069.jpg";
 import React from "react";
-import ButtonMailto from "../tools/emailcicker";
-import LinkedInButton from "../tools/LinkedIn";
+import ButtonMailto from "../tools/emailcicker.jsx";
+import LinkedInButton from "../tools/LinkedIn.jsx";
 
 export default function SidePanel() {
   return (
