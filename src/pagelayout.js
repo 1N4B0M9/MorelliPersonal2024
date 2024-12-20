@@ -28,7 +28,7 @@ const Home = ({ LeftPage, RightPage}) => {
       {/* Foreground content */}
       <div className={`relative flex h-screen ${isMobile ? 'flex-col' : ''} z-1 h-50`}>
       <div
-          className={`w-1/4 bg-zinc-900 shadow-lg p-4 overflow-y-auto m-2 h-100 ${
+          className={`w-1/4 shadow-lg p-4 overflow-y-auto m-2 h-100 ${
             isMobile ? 'w-full' : 'ml-2'
           }`}
         >
